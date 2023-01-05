@@ -1,5 +1,6 @@
 import routes from "@/utils/routes";
 import Link from "next/link";
+import { BiStar } from "react-icons/bi"
 
 function Sidebar() {
   return (
@@ -17,9 +18,10 @@ function Sidebar() {
           </button>
           <button
             type="button"
-            className="hover:bg-white/[0.1] cursor-pointer rounded-lg text-sm font-medium block w-full h-full duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500"
+            className="flex items-center justify-center hover:bg-white/[0.1] cursor-pointer rounded-lg text-sm font-semibold  w-full h-full duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500"
           >
-            Stared
+            <BiStar size={16} className="mr-1"/>
+            Favorites
           </button>
         </div>
       </div>
