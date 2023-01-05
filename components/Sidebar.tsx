@@ -21,7 +21,7 @@ function Sidebar() {
         </div>
       </div>
 
-      <hr className="mx-auto w-10/12 h-px border-none bg-black/70 my-2" />
+      <hr className="mx-auto w-10/12 h-px border-none bg-white/10 my-2" />
 
       <div>All conversations</div>
     </aside>
