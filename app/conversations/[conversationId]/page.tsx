@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 
-const Conversation = () => {
+const Conversation = ({ params }: { params: { conversationId: string } }) => {
    const [message, setMessage] = useState<string | false>(false);
 
    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -11,7 +11,7 @@ const Conversation = () => {
 
    return (
       <div className="flex flex-col h-full justify-between">
-         <div className="flex-1">Messages</div>
+         <div className="flex-1">Messages of conversation {params.conversationId}</div>
 
          <form onSubmit={handleSubmit}>
             <div className="bg-black/40 rounded flex items-start">

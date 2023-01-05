@@ -1,3 +1,6 @@
+import routes from "@/utils/routes";
+import Link from "next/link";
+
 function Sidebar() {
   return (
     <aside
@@ -24,22 +27,22 @@ function Sidebar() {
       <hr className="mx-auto w-10/12 h-px border-none bg-white/10 my-4" />
 
       <div className="mx-auto px-4">
-        <div className="divide-y divide-white/10 bg-black/80 rounded-lg">
-          <div className="h-20 p-3">
+        <div className="flex flex-col divide-y divide-white/10 bg-black/80 rounded-lg">
+          <Link href={routes.getConversation("1")} className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500">
             Conversation 1
-          </div>
+          </Link>
 
-          <div className="h-20 p-3">
+          <Link href={routes.getConversation("2")} className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500">
             Conversation 2
-          </div>
+          </Link>
 
-          <div className="h-20 p-3">
+          <Link href={routes.getConversation("3")} className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500">
             Conversation 3
-          </div>
+          </Link>
 
-          <div className="h-20 p-3">
+          <Link href={routes.getConversation("4")} className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500">
             Conversation 4
-          </div>
+          </Link>
         </div>
       </div>
     </aside>
