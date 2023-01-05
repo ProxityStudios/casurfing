@@ -21,9 +21,27 @@ function Sidebar() {
         </div>
       </div>
 
-      <hr className="mx-auto w-10/12 h-px border-none bg-white/10 my-2" />
+      <hr className="mx-auto w-10/12 h-px border-none bg-white/10 my-4" />
 
-      <div>All conversations</div>
+      <div className="mx-auto px-4">
+        <div className="divide-y divide-white/10 bg-black/80 rounded-lg">
+          <div className="h-20 p-3">
+            Conversation 1
+          </div>
+
+          <div className="h-20 p-3">
+            Conversation 2
+          </div>
+
+          <div className="h-20 p-3">
+            Conversation 3
+          </div>
+
+          <div className="h-20 p-3">
+            Conversation 4
+          </div>
+        </div>
+      </div>
     </aside>
   );
 }
