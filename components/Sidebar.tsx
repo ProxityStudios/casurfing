@@ -1,6 +1,6 @@
-import routes from "@/utils/routes";
-import Link from "next/link";
-import { BiStar } from "react-icons/bi"
+import Link from 'next/link';
+import { BiStar } from 'react-icons/bi';
+import routes from '@/utils/routes';
 
 function Sidebar() {
   return (
@@ -20,7 +20,7 @@ function Sidebar() {
             type="button"
             className="flex items-center justify-center hover:bg-white/[0.1] cursor-pointer rounded-lg text-sm font-semibold  w-full h-full duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500"
           >
-            <BiStar size={16} className="mr-1"/>
+            <BiStar size={16} className="mr-1" />
             Favorites
           </button>
         </div>
@@ -30,19 +30,31 @@ function Sidebar() {
 
       <div className="mx-auto px-4">
         <div className="flex flex-col divide-y divide-white/10 bg-black/80 rounded-lg">
-          <Link href={routes.getConversation("1")} className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500">
+          <Link
+            href={routes.getConversation('1')}
+            className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500"
+          >
             Conversation 1
           </Link>
 
-          <Link href={routes.getConversation("2")} className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500">
+          <Link
+            href={routes.getConversation('2')}
+            className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500"
+          >
             Conversation 2
           </Link>
 
-          <Link href={routes.getConversation("3")} className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500">
+          <Link
+            href={routes.getConversation('3')}
+            className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500"
+          >
             Conversation 3
           </Link>
 
-          <Link href={routes.getConversation("4")} className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500">
+          <Link
+            href={routes.getConversation('4')}
+            className="rounded h-20 p-3 duration-150 focus-visible:ring ease-in-out focus-visible:ring-teal-500"
+          >
             Conversation 4
           </Link>
         </div>
