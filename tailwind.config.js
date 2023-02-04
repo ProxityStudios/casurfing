@@ -4,7 +4,7 @@ module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     container: {
-      padding: '4.5rem',
+      padding: '2rem',
     },
     extend: {
       fontFamily: {

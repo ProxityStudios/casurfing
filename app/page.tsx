@@ -1,5 +1,6 @@
 import Link from "next/link";
 import routes from "@/utils/routes";
+import Tabs from "@/components/Tabs";
 
 const Index = () => {
 
