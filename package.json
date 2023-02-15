@@ -1,5 +1,5 @@
 {
-  "name": "chat-app-new",
+  "name": "casurfing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,11 +10,6 @@
     "test:watch": "jest --watch",
     "lint": "next lint",
     "prepare": "husky install"
-  },
-  "engines": {
-    "node": ">=16.0.0",
-    "yarn": ">=1.22.0",
-    "npm": "please-use-yarn"
   },
   "husky": {
     "hooks": {
@@ -64,7 +59,6 @@
     "prettier": "^2.8.1",
     "tailwindcss": "^3.2.4",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.4",
-    "yarn-upgrade-all": "^0.7.1"
+    "typescript": "^4.9.4"
   }
 }

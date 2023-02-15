@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={'dark h-full w-full ' + inter.className}>
+    <html lang='en' className={'dark h-full w-full ' + inter.variable}>
       <head>
         <title>Casurfing</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
